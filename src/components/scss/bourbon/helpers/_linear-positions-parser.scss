@@ -25,23 +25,23 @@
       $corner: _position-flipper(nth($pos, 2));
     }
 
-    @if ("#{$side} #{$corner}"=="left top") or
-      ("#{$side} #{$corner}"=="top left")
+    @if ("#{$side} #{$corner}" == "left top") or
+      ("#{$side} #{$corner}" == "top left")
     {
       $degree: _position-flipper(#{$side}) _position-flipper(#{$corner});
     } @else if
-      ("#{$side} #{$corner}"=="right top") or
-      ("#{$side} #{$corner}"=="top right")
+      ("#{$side} #{$corner}" == "right top") or
+      ("#{$side} #{$corner}" == "top right")
     {
       $degree: _position-flipper(#{$side}) _position-flipper(#{$corner});
     } @else if
-      ("#{$side} #{$corner}"=="right bottom") or
-      ("#{$side} #{$corner}"=="bottom right")
+      ("#{$side} #{$corner}" == "right bottom") or
+      ("#{$side} #{$corner}" == "bottom right")
     {
       $degree: _position-flipper(#{$side}) _position-flipper(#{$corner});
     } @else if
-      ("#{$side} #{$corner}"=="left bottom") or
-      ("#{$side} #{$corner}"=="bottom left")
+      ("#{$side} #{$corner}" == "left bottom") or
+      ("#{$side} #{$corner}" == "bottom left")
     {
       $degree: _position-flipper(#{$side}) _position-flipper(#{$corner});
     }
